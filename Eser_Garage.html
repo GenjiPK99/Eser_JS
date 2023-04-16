@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+     
+// ES 18
+
+// Realizzare un oggetto che rappresenti un garage, dovrà contenere una lista di automobili. Per ciascuna automobile (un oggetto => {brand : ‘renault’ , model : ‘twingo’}) definire una marca ed almeno un modello. 
+// Scrivere un metodo che prenda in input una marca e stampi i modelli presenti nel garage di quella stessa marca. Consigli: Potete usare un array come base per salvare le automobili.
+        
+let garage = {
+            automobili : [
+            { brand : 'Renault' , model : 'twingo'},
+            { brand : 'Mercedes' , model : 'amg'},
+            { brand : 'Fiat' , model : 'panda'},
+            { brand : 'Fiat' , model : 'UNO'},
+            ],
+
+            'scegliauto': function(ricercaAuto){
+                let filtered = this.automobili.filter((car) => car.brand.toLowerCase() == ricercaAuto.toLowerCase());
+                this.automobili = filtered 
+                
+            }
+        }
+
+        garage.scegliauto('fiat');
+        console.log(garage);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

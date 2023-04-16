@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        
+        //   ES 12
+        //   Scrivi due funzioni una che prenda in input un array di numeri e restituisca il maggiore, l'altra che restituisca il minore.
+        //   Esempio:
+        //   Input: a = 1, b = -10, c = 4
+        //   Output: minore = -10, maggiore = 4
+        
+        let arr1 = [7,2,10,4,5]
+        
+        function maggiore(arr1) {
+            let max= Math.max(...arr1)
+            return max;
+        }
+        console.log(maggiore(arr1))
+
+        function minore(arr1) {
+            let min= Math.min(...arr1)
+            return min;
+        }
+        
+        console.log(minore(arr1))
+        
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
